@@ -1,0 +1,67 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/1b79c4b552.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="manifest" href="manifest.json"/>
+    <title>Voice Recorder</title>
+</head>
+<body>
+    <div class="site">
+        <div class="app-list show">
+            <h3>Lista de gravações</h3>
+            <div class="recordings-list">
+                <!--
+                <div class="recording">
+                    <span class="title">Gravação</span>
+                    <div class="recording-data">
+                        <span class="date">10/06/2020 6:48 PM</span>
+                        <span class="duration">0:05</span>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <div class="recording-start"><i class="fa fa-microphone-alt"></i></div>
+        </div>
+
+        <div class="app-recording">
+            <div class="app-timer">
+                <span class="timer">00:00:00</span>
+                <div class="functions">
+                    <i class="play-pause fa fa-pause"></i>
+                    <i class="fa fa-stop"></i>
+                </div>  
+            </div>
+        </div>
+
+        <div class="app-listeng">
+            <i class="back fa fa-chevron-left"></i>
+            <div class="recording-info">
+                <span class="title"></span>
+                <span class="date"></span>
+                <audio controls src=""></audio>
+                <i class="remove fa fa-trash-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('./service-worker.js')
+                .then(function () { console.log('Service Worker Registered'); });
+        }               
+
+    
+    </script>
+    
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

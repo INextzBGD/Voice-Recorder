@@ -1,0 +1,166 @@
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #eee;
+    color: #444;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.site {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ------------ INICIO APP-LIST  ---------------*/
+
+.app-list {
+    display: none;
+    overflow: hidden;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.app-list.show {
+    display: block;
+}
+.recording-start,
+.remove {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.recording-start i:hover,
+.remove:hover {
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.app-list h3 {
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: default;
+}   
+
+.recording {
+    padding: 5px 30px;
+    cursor: default;
+}
+
+.recording:hover {
+    background-color: #e5e5e5;
+}
+
+.recording-data {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* ------------ APP-LIST FIM ---------------*/
+
+/* ------------ INICIO APP-RECORDING  ---------------*/
+
+.app-recording {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-recording.show {
+    display: flex;
+}
+.app-timer {
+    text-align: center;
+    cursor: default;
+}
+
+.app-timer i {
+    margin: 0 20px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #aaa;
+    border-radius: 100%;
+}
+
+.timer {
+    font-size: 2.5rem;
+}
+
+.functions {
+    text-align: center;
+}
+
+/* ------------ APP-RECORDING FIM ---------------*/
+
+/* ------------ INICIO APP-LISTENG ---------------*/
+
+.app-listeng {
+    position: relative;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-listeng.show {
+    display: flex;
+}
+
+.back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.back:hover {
+    font-size: 1.4rem;
+}
+
+.recording-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.recording-info .title {
+    font-size: 1.2rem;
+}
+
+.recording-info .date {
+    font-size: 1rem;
+    color: #888;
+}
+
+.recording-info audio {
+    margin-top: 30px;
+    outline-style: none;
+}
+/* ------------ APP-LISTENG FIM ---------------*/
+
+/* ------------ DESKTOP VERSION ---------------*/
+
+@media (min-width: 700px) {
+
+}
